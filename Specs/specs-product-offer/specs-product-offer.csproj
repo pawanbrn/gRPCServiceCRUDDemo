@@ -22,9 +22,6 @@
 		<Protobuf Include="..\..\ProductOfferGrpcService\Protos\offer.proto" GrpcServices="Client">
 			<Link>Protos\offer.proto</Link>
 		</Protobuf>
-		<Protobuf Include="..\..\ProductOfferGrpcService\Protos\useroffer.proto" GrpcServices="Client">
-		  <Link>Protos\useroffer.proto</Link>
-		</Protobuf>
 	</ItemGroup>
 
 

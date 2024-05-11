@@ -20,6 +20,11 @@ namespace specs_product_offer.ProductOffer.Client
             };
         }
 
+        public static Contract.GetOfferDetailRequest MapToContractType(this Types.GetOfferDetailRequest source)
+        {
+            return new Contract.GetOfferDetailRequest { ProductId = source.ProductId };
+        }
+
         public static GrpcResponse<Types.Offers> MapToSpecsType(this Contract.Offers source)
         {
             var offerDetail = new Types.Offers(Items: source.Items.Select(x => x.MapToSpecsType().Data!));
