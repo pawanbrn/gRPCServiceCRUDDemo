@@ -6,6 +6,7 @@ using specs_product_offer.ProductOffer.Client.Types;
 var productOfferClient = new ProductOfferClient();
 var productOfferHelper = new ProductOfferHelper(productOfferClient);
 
+
 // Create Offer
 var createOfferDetailRequest = new CreateOfferDetailRequest(new OfferDetail(Id: 2, ProductName: "Mobile", OfferDescription: "Test Mobile1"));
 var createOfferDetailsResponse = await productOfferHelper.CreateOfferAsync(createOfferDetailRequest);
