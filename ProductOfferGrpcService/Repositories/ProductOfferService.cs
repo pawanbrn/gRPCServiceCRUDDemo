@@ -8,7 +8,8 @@ namespace ProductOfferGrpcService.Repositories
     public class ProductOfferService : IProductOfferService
     {
         private readonly DbContextClass _dbContext;
-        private readonly string FileName = @"C:\Users\kumar-152\Downloads\gRPCServiceCRUDDemo\out.txt";
+        // private readonly string FileName = @"C:\Users\kumar-152\Downloads\gRPCServiceCRUDDemo\out.txt";
+        private readonly string FileName = @"C:\gRPCDemo\out.txt";
 
         public ProductOfferService(DbContextClass dbContext)
         {
